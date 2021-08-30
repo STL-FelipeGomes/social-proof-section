@@ -1,0 +1,157 @@
+/*
+  General formatting
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bc-black: rgba(150, 161, 199, 0.123);
+	--blue: #24209e;
+	--blue-card: #24209ea8;
+	--blue-dark: #bdbbec;
+	--blue-clean: #4847a5;
+	--blue-white: #1854b6;
+	--gray-blue: rgba(58, 59, 77, 0.274);
+}
+
+body {
+	background: var(--bc-black);
+	font: 400 15px 'Spartan', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#container {
+	margin: 5rem;
+}
+
+/*
+  Header formatting
+*/
+
+#container #headersup {
+	display: flex;
+	flex: wrap;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#container #headersup {
+	margin-bottom: 5rem;
+}
+
+#container #headersup #headersup-header h1 {
+	width: 26rem;
+	color: var(--blue);
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+#container #headersup #headersup-header p {
+	color: var(--blue-white);
+	font-weight: 500;
+	width: 30rem;
+}
+
+/*
+  Aside formatting
+  h1:nth-child()
+*/
+#headersup-aside aside {
+	width: 24rem;
+}
+
+#headersup-aside aside:nth-child(2) {
+	margin: 1rem 0 1rem 4rem;
+	width: 25.5rem;
+}
+
+#headersup-aside aside:nth-child(3) {
+	margin-left: 10rem;
+}
+
+#headersup-aside aside .card-aside {
+	display: flex;
+	flex: wrap;
+	align-items: center;
+	padding: 1.5rem;
+	background: var(--gray-blue);
+	border-radius: 0.5rem;
+}
+
+#headersup-aside aside .card-aside img:nth-child(5) {
+	margin-right: 0.5rem;
+}
+
+#headersup-aside aside .card-aside p {
+	font-weight: 700;
+	color: var(--blue-card);
+}
+
+/*
+  Main formatting
+*/
+
+#contents {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: white;
+}
+
+#contents .contents-section .container-contents {
+	width: 20rem;
+	background-color: var(--blue-clean);
+	padding: 2rem;
+	border-radius: 0.5rem;
+}
+
+#contents section:nth-child(2) {
+	margin-top: 1.5rem;
+}
+
+#contents section:nth-child(3) {
+	margin-top: 3rem;
+}
+
+.contents-section .container-contents header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.contents-section .container-contents header img {
+	border-radius: 22.5rem;
+	width: 50px;
+	height: 50px;
+	margin-right: 1rem;
+}
+
+.container-contents header div h2 {
+	font-size: 1.2rem;
+	font-weight: 500;
+	margin-bottom: 0.2rem;
+}
+
+.container-contents header div h3 {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--blue-dark);
+}
+
+/*
+  Mobile
+*/
+
+@media (max-width: 375px) {
+	body {
+	}
+}
